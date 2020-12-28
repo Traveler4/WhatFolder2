@@ -37,7 +37,7 @@ Public Class Ribbon1
     Public Sub GetButtonID(control As Office.IRibbonControl)
         Dim myOutlook As Outlook.Application = Globals.ThisAddIn.Application
 
-        System.Diagnostics.Debug.WriteLine(CStr(myOutlook.ActiveExplorer.Selection.Count) + "(Count)")
+        System.Diagnostics.Debug.WriteLine("Count: " & CStr(myOutlook.ActiveExplorer.Selection.Count))
         If myOutlook.ActiveExplorer.Selection.Count > 0 Then
 
             Dim mailItem As Outlook.MailItem
